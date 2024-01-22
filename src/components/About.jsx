@@ -1,4 +1,5 @@
 import React from "react";
+import Profile from "../assets/imgs/team-1.jpg"
 
 function About() {
   return (
@@ -7,8 +8,8 @@ function About() {
       <p className="text-indigo-500 text-3xl">About Me</p>
       <div className="flex flex-col lg:flex-row justify-center p-8 md:mx-24">
         <img
-          src="src\assets\imgs\team-1.jpg"
-          className="lg:h-96 h-fit rounded-tr-3xl rounded-bl-3xl"
+          src={Profile}
+          className="lg:h-[30rem] h-fit rounded-tr-3xl rounded-bl-3xl"
           alt="Profile"
         />
         <div className="lg:mx-8 mt-8 lg:mt-0 text-justify flex flex-col gap-5">
