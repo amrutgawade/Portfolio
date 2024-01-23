@@ -14,7 +14,7 @@ function Header() {
   const [mode, setMode] = useState(true);
   return (
     <header id="home" className="min-h-screen py-16 relative">
-      <nav className="fixed lg:top-16 bottom-10 lg:left-14 left-[8%]">
+      <nav className="fixed lg:top-16 bottom-[5%] lg:left-14 left-[50%] lg:translate-x-0 lg:translate-y-0 translate-x-[-50%] translate-y-[-50%]">
         <ul className="flex lg:flex-col gap-10 items-center lg:gap-y-5 px-4 lg:px-3 py-3 lg:py-4 rounded-3xl text-white text-xl bg-[rgb(0,0,0,0.2)]">
           <li>
             <a href="#home" className="hover:text-indigo-500">
