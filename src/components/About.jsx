@@ -12,7 +12,7 @@ function About() {
           className="lg:h-[30rem] h-fit rounded-tr-3xl rounded-bl-3xl"
           alt="Profile"
         />
-        <div className="lg:mx-8 mt-8 lg:mt-0 text-justify flex flex-col gap-5">
+        <div className="lg:mx-8 mt-8 lg:mt-0 text-justify flex flex-col gap-5 text-slate-300 lg:leading-loose">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse iure,
             officiis quia{" "}

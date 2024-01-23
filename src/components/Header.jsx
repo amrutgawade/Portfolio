@@ -50,7 +50,7 @@ function Header() {
       </nav>
       <button
         onClick={() => setMode(!mode)}
-        className="absolute top-6 right-6 p-3 rounded-full ring-1 ring-slate-800 hover:text-black text-white duration-700 hover:bg-white"
+        className="absolute top-6 right-6 p-3 rounded-full ring-1 ring-slate-800 text-white duration-700 hover:bg-white hover:text-black"
       >
         {mode ? <FaMoon /> : <FaSun />}
       </button>
@@ -63,7 +63,7 @@ function Header() {
       </a>
 
       <div className="flex flex-col items-center">
-        <p className="text-center mt-8 text-gray-500 text-base font-bold">
+        <p className="text-center lg:mt-24 mt-8 text-gray-500 text-base font-bold">
           Hello I'm
         </p>
         <p className="text-center uppercase mt-4 text-gray-50 text-4xl font-semibold">
