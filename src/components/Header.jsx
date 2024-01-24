@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import CV from "../assets/docs/cv.pdf";
 import { FaMoon, FaSun } from "react-icons/fa";
 import {
   IoMdCall,
@@ -10,10 +11,9 @@ import {
 } from "react-icons/io";
 
 function Header() {
-  const [mode, setMode] = useState(true);
+  const [mode, setMode] = useState(false);
   const element = document.documentElement;
   const [activeItem, setActiveItem] = useState("home");
-  const isActive = "bg-indigo-500/30 text-indigo-500";
 
   const handleItemClick = (itemName) => {
     setActiveItem(itemName);
@@ -33,33 +33,59 @@ function Header() {
           id="navbar"
           className="flex lg:flex-col gap-x-4 items-center lg:gap-y-2 px-4 lg:px-2 py-2 lg:py-4 rounded-3xl text-black dark:text-white text-xl dark:bg-black/20 bg-indigo-500/20"
         >
-          <li className={`rounded-full p-2 ${getIsActiveClass('home')}`}>
-            <a href="#home" className="hover:text-indigo-500" onClick={() => handleItemClick('home')}>
+          <li className={`rounded-full p-2 ${getIsActiveClass("home")}`}>
+            <a
+              href="#home"
+              className="hover:text-indigo-500"
+              onClick={() => handleItemClick("home")}
+            >
               <IoMdHome />
             </a>
           </li>
-          <li className={`rounded-full p-2 ${getIsActiveClass('about')}`}>
-            <a href="#about" className="hover:text-indigo-500" onClick={() => handleItemClick('about')}>
+          <li className={`rounded-full p-2 ${getIsActiveClass("about")}`}>
+            <a
+              href="#about"
+              className="hover:text-indigo-500"
+              onClick={() => handleItemClick("about")}
+            >
               <IoMdPerson />
             </a>
           </li>
-          <li className={`rounded-full p-2 ${getIsActiveClass('skills')}`}>
-            <a href="#skills" className="hover:text-indigo-500" onClick={() => handleItemClick('skills')}>
+          <li className={`rounded-full p-2 ${getIsActiveClass("skills")}`}>
+            <a
+              href="#skills"
+              className="hover:text-indigo-500"
+              onClick={() => handleItemClick("skills")}
+            >
               <IoMdSchool />
             </a>
           </li>
-          <li className={`rounded-full p-2 ${getIsActiveClass('portfolio')}`}>
-            <a href="#portfolio" className="hover:text-indigo-500" onClick={() => handleItemClick('portfolio')}>
+          <li className={`rounded-full p-2 ${getIsActiveClass("portfolio")}`}>
+            <a
+              href="#portfolio"
+              className="hover:text-indigo-500"
+              onClick={() => handleItemClick("portfolio")}
+            >
               <IoMdDesktop />
             </a>
           </li>
-          <li className={`rounded-full p-2 ${getIsActiveClass('testimonials')}`}>
-            <a href="#testimonials" className="hover:text-indigo-500" onClick={() => handleItemClick('testimonials')}>
+          <li
+            className={`rounded-full p-2 ${getIsActiveClass("testimonials")}`}
+          >
+            <a
+              href="#testimonials"
+              className="hover:text-indigo-500"
+              onClick={() => handleItemClick("testimonials")}
+            >
               <IoMdChatboxes />
             </a>
           </li>
-          <li className={`rounded-full p-2 ${getIsActiveClass('contact')}`}>
-            <a href="#contact" className="hover:text-indigo-500" onClick={() => handleItemClick('contact')}>
+          <li className={`rounded-full p-2 ${getIsActiveClass("contact")}`}>
+            <a
+              href="#contact"
+              className="hover:text-indigo-500"
+              onClick={() => handleItemClick("contact")}
+            >
               <IoMdCall />
             </a>
           </li>
@@ -92,7 +118,7 @@ function Header() {
         <div className="flex gap-5 mt-16">
           <a
             className="inline-block text-center px-6 py-4 bg-transparent text-indigo-500 rounded border-none outline outline-1 outline-indigo-500 hover:outline-black/50 dark:hover:outline-white hover:text-black/50 dark:hover:text-white duration-500"
-            href="src\assets\docs\cv.pdf"
+            href={CV}
             target="_blank"
           >
             Download CV
