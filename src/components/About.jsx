@@ -3,8 +3,8 @@ import Profile from "../assets/imgs/team-1.jpg"
 
 function About() {
   return (
-    <section id="about" className="min-h-screen py-16 text-white text-center">
-      <p className="text-gray-400 text-sm mb-1 font-medium">Want to know</p>
+    <section id="about" className="min-h-screen py-16 text-center">
+      <p className="text-slate-500 text-sm mb-1 font-medium">Want to know</p>
       <p className="text-indigo-500 text-3xl">About Me</p>
       <div className="flex flex-col lg:flex-row justify-center p-8 md:mx-24">
         <img
@@ -12,7 +12,7 @@ function About() {
           className="lg:h-[30rem] h-fit rounded-tr-3xl rounded-bl-3xl"
           alt="Profile"
         />
-        <div className="lg:mx-8 mt-8 lg:mt-0 text-justify flex flex-col gap-5 text-slate-300 lg:leading-loose">
+        <div className="lg:mx-8 mt-8 lg:mt-0 text-justify flex flex-col gap-5 text-slate-900 dark:text-slate-300 lg:leading-loose">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse iure,
             officiis quia{" "}

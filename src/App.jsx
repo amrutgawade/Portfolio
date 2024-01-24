@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-slate-900">
+    <div className="bg-slate-200 dark:bg-slate-900">
       {/* <ParticlesBackground /> */}
       <Header />
       <About />
