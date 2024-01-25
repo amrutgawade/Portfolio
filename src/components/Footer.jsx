@@ -17,27 +17,47 @@ function Footer() {
       </h1>
       <ul className="flex flex-col md:flex-row items-center justify-center gap-5 mb-14">
         <li>
-          <a href="#home" className="hover:text-white duration-500">
+          <a
+            href="#home"
+            className="hover:text-white duration-500"
+            aria-label="Visit the Home Section"
+          >
             Home
           </a>
         </li>
         <li>
-          <a href="#about" className="hover:text-white duration-500">
+          <a
+            href="#about"
+            className="hover:text-white duration-500"
+            aria-label="Visit the About Section"
+          >
             About
           </a>
         </li>
         <li>
-          <a href="#portfolio" className="hover:text-white duration-500">
+          <a
+            href="#portfolio"
+            className="hover:text-white duration-500"
+            aria-label="Visit the Portfolio Section"
+          >
             Portfolio
           </a>
         </li>
         <li>
-          <a href="#testimonials" className="hover:text-white duration-500">
+          <a
+            href="#testimonials"
+            className="hover:text-white duration-500"
+            aria-label="Visit the Testimonials Section"
+          >
             Testimonials
           </a>
         </li>
         <li>
-          <a href="#contact" className="hover:text-white duration-500">
+          <a
+            href="#contact"
+            className="hover:text-white duration-500"
+            aria-label="Visit the Contact Section"
+          >
             Contact
           </a>
         </li>
@@ -48,6 +68,7 @@ function Footer() {
             href="https://api.whatsapp.com/send/?phone=%2B918237941681&text&type=phone_number&app_absent=0"
             className="hover:text-white duration-500"
             target="_blank"
+            aria-aria-label="Send a Whatspp Message to Amrut Gawade"
           >
             <FaSquareWhatsapp />
           </a>
@@ -57,6 +78,7 @@ function Footer() {
             href="https://github.com/amrutgawade"
             className="hover:text-white duration-500"
             target="_blank"
+            aria-aria-label="Visit the Github Profile of Amrut Gawade"
           >
             <FaSquareGithub />
           </a>
@@ -66,6 +88,7 @@ function Footer() {
             href="https://www.instagram.com/com.amrut.ig/"
             className="hover:text-white duration-500"
             target="_blank"
+            aria-aria-label="Visit the Instagram Profile of Amrut Gawade"
           >
             <FaSquareInstagram />
           </a>
@@ -75,6 +98,7 @@ function Footer() {
             href="https://www.linkedin.com/in/amrut-gawade/"
             className="hover:text-white duration-500"
             target="_blank"
+            aria-aria-label="Visit the Linkedin Profile of Amrut Gawade"
           >
             <FaLinkedin />
           </a>

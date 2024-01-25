@@ -42,6 +42,7 @@ function Header() {
               href="#home"
               className="hover:text-indigo-500"
               onClick={() => handleItemClick("home")}
+              aria-label="Visit the Home Section"
             >
               <IoMdHome />
             </a>
@@ -51,6 +52,7 @@ function Header() {
               href="#about"
               className="hover:text-indigo-500"
               onClick={() => handleItemClick("about")}
+              aria-label="Visit the About Section"
             >
               <IoMdPerson />
             </a>
@@ -60,6 +62,7 @@ function Header() {
               href="#skills"
               className="hover:text-indigo-500"
               onClick={() => handleItemClick("skills")}
+              aria-label="Visit the Skills Section"
             >
               <IoMdSchool />
             </a>
@@ -69,6 +72,7 @@ function Header() {
               href="#portfolio"
               className="hover:text-indigo-500"
               onClick={() => handleItemClick("portfolio")}
+              aria-label="Visit the Portfolio Section"
             >
               <IoMdDesktop />
             </a>
@@ -80,6 +84,7 @@ function Header() {
               href="#testimonials"
               className="hover:text-indigo-500"
               onClick={() => handleItemClick("testimonials")}
+              aria-label="Visit the Testimonials Section"
             >
               <IoMdChatboxes />
             </a>
@@ -89,6 +94,7 @@ function Header() {
               href="#contact"
               className="hover:text-indigo-500"
               onClick={() => handleItemClick("contact")}
+              aria-label="Visit the Contact Section"
             >
               <IoMdCall />
             </a>

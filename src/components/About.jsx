@@ -52,6 +52,7 @@ function About() {
           <a
             className="inline-block text-center px-6 py-4 bg-indigo-500 text-white rounded border-none hover:bg-indigo-600 hover:text-slate-200 duration-500 leading-normal"
             href="#contact"
+            aria-label="Visit the Contact Section"
           >
             Let's Talk
           </a>

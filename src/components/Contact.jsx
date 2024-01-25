@@ -45,6 +45,7 @@ function Contact() {
             <a
               href="mailto:amrutgawade.08@gmail.com"
               className="text-indigo-500 hover:text-indigo-700 duration-500"
+              aria-label="Send a email to Amrut Gawade"
             >
               Send a Message
             </a>
@@ -56,6 +57,7 @@ function Contact() {
             <a
               className="text-indigo-500 hover:text-indigo-700 duration-500"
               href="https://api.whatsapp.com/send/?phone=%2B918237941681&text&type=phone_number&app_absent=0"
+              aria-aria-label="Send a Whatspp Message to Amrut Gawade"
             >
               Send a Message
             </a>

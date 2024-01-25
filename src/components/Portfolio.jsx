@@ -19,6 +19,7 @@ function Portfolio() {
               href="https://amrutgawade.github.io/Portfolio/"
               target="_blank"
               className="inline-block px-3 py-2 text-[12px] rounded border-none text-indigo-500 hover:text-white outline outline-1 hover:outline-white outline-indigo-500 duration-500"
+              aria-label="Visit the Live Demo of Portfolio"
             >
               Live Demo
             </a>
@@ -26,6 +27,7 @@ function Portfolio() {
               href="https://github.com/amrutgawade/Portfolio"
               target="_blank"
               className="inline-block px-3 py-2 text-[12px] text-white bg-indigo-600 rounded hover:bg-indigo-500 duration-500"
+              aria-label="Visit the Github Repository of Portfolio"
             >
               Github
             </a>
@@ -44,6 +46,7 @@ function Portfolio() {
               href="https://dattakrupajewellers.in/"
               target="_blank"
               className="inline-block px-3 py-2 text-[12px] rounded border-none text-indigo-500 hover:text-white outline outline-1 hover:outline-white outline-indigo-500 duration-500"
+              aria-label="Visit the Live Demo of Dattakrupa Jewellers"
             >
               Live Demo
             </a>
@@ -51,6 +54,7 @@ function Portfolio() {
               href="https://github.com/FreakDevelopers/dattakrupajewellers"
               target="_blank"
               className="inline-block px-3 py-2 text-[12px] text-white bg-indigo-600 rounded hover:bg-indigo-500 duration-500"
+              aria-label="Visit the Github Repository of Dattakrupa Jewellers"
             >
               Github
             </a>
