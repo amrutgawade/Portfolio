@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CV from "../assets/docs/cv.pdf";
+import Profile1 from "../assets/imgs/Profile-1.jpg";
 import { FaMoon, FaSun } from "react-icons/fa";
 import {
   IoMdCall,
@@ -111,21 +112,27 @@ function Header() {
       <a
         href="#footer"
         className="hidden md:block fixed bottom-[15%] right-8 rotate-90 text-sm text-indigo-600 hover:text-black dark:hover:text-white duration-700"
+        aria-label="Scroll to Bottom at Footer Section"
       >
         Scroll Down &nbsp; →
       </a>
 
-      <div className="flex flex-col items-center">
-        <p className="text-center lg:mt-24 mt-8 text-slate-500 text-base font-bold">
+      <div className="flex flex-col items-center justify-center tracking-wide">
+        <img
+          src={Profile1}
+          alt="Profile-1"
+          className="lg:mt-8 mt-8 h-w-64 w-64 rounded-full p-2 border-indigo-500/75 border-2"
+        />
+        <p className="lg:mt-8 mt-8 text-slate-500 text-base font-bold">
           Hello I'm
         </p>
-        <p className="text-center uppercase mt-4 dark:text-slate-50 text-4xl font-semibold">
-          Amrut Gawade
+        <p className="mt-4 dark:text-slate-50 text-4xl font-semibold">
+          AMRUT GAWADE
         </p>
-        <p className="text-center mt-2 text-slate-500 text-base font-bold">
+        <p className="mt-2 text-slate-500 text-base font-bold">
           Fullstack Developer | Software Developer
         </p>
-        <div className="flex items-center justify-center gap-x-5 mt-16">
+        <div className="flex items-center justify-center gap-x-5 mt-10 tracking-normal">
           <a
             className="inline-block text-center px-6 py-4 bg-transparent text-indigo-500 rounded border-none outline outline-1 outline-indigo-500 hover:outline-black/50 dark:hover:outline-white hover:text-black/50 dark:hover:text-white duration-500"
             href={CV}
