@@ -24,7 +24,11 @@ function Header() {
   };
 
   useEffect(() => {
-    element.classList.toggle("dark");
+    if (mode == true) {
+      element.classList.add("dark");
+    } else {
+      element.classList.remove("dark");
+    }
   }, [mode]);
   return (
     <header id="home" className="min-h-screen py-16 relative">
@@ -91,12 +95,12 @@ function Header() {
           </li>
         </ul>
       </nav>
-      <button
+      <div
         onClick={() => setMode(!mode)}
-        className="absolute lg:fixed top-6 right-6 p-3 rounded-full ring-1 ring-indigo-400 dark:ring-indigo-800 text-black dark:text-white duration-700 hover:bg-white dark:hover:text-black"
+        className="absolute lg:fixed top-6 right-6 p-3 rounded-full text-black dark:text-white duration-700 dark:-rotate-[30deg] rotate-[30deg]"
       >
         {mode ? <FaMoon /> : <FaSun />}
-      </button>
+      </div>
 
       <a
         href="#footer"
@@ -115,7 +119,7 @@ function Header() {
         <p className="text-center mt-2 text-slate-500 text-base font-bold">
           Fullstack Developer | Software Developer
         </p>
-        <div className="flex gap-5 mt-16">
+        <div className="flex items-center justify-center gap-x-5 mt-16">
           <a
             className="inline-block text-center px-6 py-4 bg-transparent text-indigo-500 rounded border-none outline outline-1 outline-indigo-500 hover:outline-black/50 dark:hover:outline-white hover:text-black/50 dark:hover:text-white duration-500"
             href={CV}
@@ -124,7 +128,7 @@ function Header() {
             Download CV
           </a>
           <a
-            className="inline-block text-center px-6 py-4 bg-indigo-600 text-white rounded border-none hover:bg-indigo-700 hover:text-gray-300 duration-500"
+            className="inline-block text-center px-6 py-4 bg-indigo-500 text-white rounded border-none hover:bg-indigo-600 hover:text-slate-200 duration-500"
             href="#contact"
           >
             Let's Talk

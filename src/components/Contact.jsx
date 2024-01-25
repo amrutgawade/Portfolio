@@ -38,7 +38,7 @@ function Contact() {
       <p className="text-indigo-500 text-3xl">Contact Me</p>
       <div className="flex lg:flex-row flex-col items-center justify-center gap-10 py-16">
         <div className="flex flex-col gap-y-5 mb-8 lg:mb-0">
-          <div className="flex flex-col h-48 text-sm rounded-lg w-60 items-center justify-center p-4 bg-indigo-500/10">
+          <div className="flex flex-col h-48 text-sm rounded-lg w-60 items-center justify-center p-4 bg-indigo-500/10 outline outline-1 outline-indigo-500/30">
             <FaEnvelope className="text-2xl mb-4" />
             <p className="text-2xl mb-1">Email</p>
             <p className="mb-6">amrutgawade.08@gmail.com</p>
@@ -49,7 +49,7 @@ function Contact() {
               Send a Message
             </a>
           </div>
-          <div className="flex flex-col h-48 text-sm rounded-lg w-60 items-center justify-center p-4 bg-indigo-500/10">
+          <div className="flex flex-col h-48 text-sm rounded-lg w-60 items-center justify-center p-4 bg-indigo-500/10 outline outline-1 outline-indigo-500/30">
             <FaWhatsapp className="text-3xl mb-4" />
             <p className="text-2xl mb-1">Whatsapp</p>
             <p className="mb-6">+91 8237941681</p>

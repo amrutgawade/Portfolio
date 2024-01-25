@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Toaster position="top-right" reverseOrder={false} />
-      <div className="bg-slate-200 dark:bg-slate-900">
+      <div className="bg-slate-50 dark:bg-slate-900">
         {/* <ParticlesBackground /> */}
         <Header />
         <About />

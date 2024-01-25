@@ -11,10 +11,10 @@ function Testimonials() {
         Reiview from my clients
       </p>
       <p className="text-indigo-500 text-3xl">Testimonials</p>
-      <div className="flex flex-col items-center justify-center mx-auto mt-24 bg-indigo-500/30 rounded-3xl lg:p-8 p-4 lg:w-1/2 w-4/5">
+      <div className="flex flex-col items-center justify-center mx-auto mt-24 bg-indigo-500/20 outline outline-1 outline-indigo-500/30 rounded-3xl lg:p-8 p-4 lg:w-1/2 w-4/5">
         <img src={Testimonial1} alt="" className="h-14 w-14 rounded-full" />
-        <p className="mt-6 text-sm text-slate-500 font-semibold">Unknown</p>
-        <p className="mt-2 text-sm tracking-wider text-slate-900 dark:text-white">
+        <p className="mt-4 text-sm text-slate-600 dark:text-slate-400 font-semibold leading-relaxed">Unknown</p>
+        <p className="mt-2 text-sm tracking-wider text-slate-900 dark:text-white leading-relaxed">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
           et tempore sint sunt quibusdam accusamus!
         </p>
