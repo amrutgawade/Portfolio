@@ -68,7 +68,7 @@ function Footer() {
             href="https://api.whatsapp.com/send/?phone=%2B918237941681&text&type=phone_number&app_absent=0"
             className="hover:text-white duration-500"
             target="_blank"
-            aria-aria-label="Send a Whatspp Message to Amrut Gawade"
+            aria-label="Send a Whatspp Message to Amrut Gawade"
           >
             <FaSquareWhatsapp />
           </a>
@@ -78,7 +78,7 @@ function Footer() {
             href="https://github.com/amrutgawade"
             className="hover:text-white duration-500"
             target="_blank"
-            aria-aria-label="Visit the Github Profile of Amrut Gawade"
+            aria-label="Visit the Github Profile of Amrut Gawade"
           >
             <FaSquareGithub />
           </a>
@@ -88,7 +88,7 @@ function Footer() {
             href="https://www.instagram.com/com.amrut.ig/"
             className="hover:text-white duration-500"
             target="_blank"
-            aria-aria-label="Visit the Instagram Profile of Amrut Gawade"
+            aria-label="Visit the Instagram Profile of Amrut Gawade"
           >
             <FaSquareInstagram />
           </a>
@@ -98,7 +98,7 @@ function Footer() {
             href="https://www.linkedin.com/in/amrut-gawade/"
             className="hover:text-white duration-500"
             target="_blank"
-            aria-aria-label="Visit the Linkedin Profile of Amrut Gawade"
+            aria-label="Visit the Linkedin Profile of Amrut Gawade"
           >
             <FaLinkedin />
           </a>
