@@ -67,18 +67,22 @@ function Contact() {
             type="text"
             name="user_name"
             placeholder="Your Name"
+            required
+            pattern="[a-zA-Z\s]+"
           />
           <input
             className="px-3 py-4 lg:w-[35vw] w-full rounded bg-transparent outline outline-1 outline-indigo-500"
             type="email"
             name="user_email"
             placeholder="Your Email"
+            required
           />
           <textarea
             className="px-3 py-4 lg:w-[35vw] w-full resize-none rounded bg-transparent outline outline-1 outline-indigo-500"
             placeholder="Message"
             name="message"
             rows="5"
+            required
           ></textarea>
           <button
             type="submit"
