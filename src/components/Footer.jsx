@@ -106,7 +106,7 @@ function Footer() {
       </ul>
       <div className="flex items-center px-2 py-1 text-xs bg-indigo-500/50 text-slate-300 mb-6 outline outline-1 outline-indigo-50/30 rounded">
         <span class="animate-ping absolute h-1 w-1 rounded-full bg-sky-400 opacity-75"></span>
-        <span className="ml-4">11 visitors in last 7 days</span>
+        <span className="ml-4">23 visitors in last 7 days</span>
       </div>
       <p className="mb-8 text-sm font-medium">
         &copy; Amrut Gawade all rights reserved.
