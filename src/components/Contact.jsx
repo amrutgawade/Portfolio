@@ -36,7 +36,7 @@ function Contact() {
     >
       <p className="text-slate-500 text-sm mb-1 font-medium">Got Work for me</p>
       <p className="text-indigo-500 text-3xl">Contact Me</p>
-      <div className="flex lg:flex-row flex-col items-center justify-center gap-10 py-16">
+      <div className="flex lg:flex-row flex-col items-center justify-center gap-10 mt-8 lg:mt-16">
         <div className="flex flex-col gap-y-5 mb-8 lg:mb-0">
           <div className="flex flex-col h-48 text-sm rounded-lg w-60 items-center justify-center p-4 bg-indigo-500/10 outline outline-1 outline-indigo-500/30">
             <FaEnvelope className="text-2xl mb-4" />
@@ -53,10 +53,10 @@ function Contact() {
           <div className="flex flex-col h-48 text-sm rounded-lg w-60 items-center justify-center p-4 bg-indigo-500/10 outline outline-1 outline-indigo-500/30">
             <FaWhatsapp className="text-3xl mb-4" />
             <p className="text-2xl mb-1">Whatsapp</p>
-            <p className="mb-6">+91 8237941681</p>
+            <p className="mb-6">+91 7741941681</p>
             <a
               className="text-indigo-500 hover:text-indigo-700 duration-500"
-              href="https://api.whatsapp.com/send/?phone=%2B918237941681&text&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=%2B917741941681&text&type=phone_number&app_absent=0"
               aria-label="Send a Whatspp Message to Amrut Gawade"
             >
               Send a Message

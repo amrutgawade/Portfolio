@@ -10,9 +10,10 @@ import {
   IoMdPerson,
   IoMdSchool,
 } from "react-icons/io";
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 
 function Header() {
-  const [mode, setMode] = useState(false);
+  const [mode, setMode] = useState(true);
   const element = document.documentElement;
   const [activeItem, setActiveItem] = useState("home");
 
@@ -33,10 +34,10 @@ function Header() {
   }, [mode]);
   return (
     <header id="home" className="min-h-screen py-16 relative">
-      <nav className="fixed lg:top-16 bottom-[5%] lg:left-14 left-[50%] lg:translate-x-0 lg:translate-y-0 translate-x-[-50%] translate-y-[-50%]">
+      <nav className="fixed lg:top-16 bottom-[5%] lg:left-12 left-[50%] lg:translate-x-0 lg:translate-y-0 translate-x-[-50%] translate-y-[-50%]">
         <ul
           id="navbar"
-          className="flex lg:flex-col gap-x-4 items-center lg:gap-y-2 px-4 lg:px-2 py-2 lg:py-4 rounded-3xl text-black dark:text-white text-xl dark:bg-black/20 bg-indigo-500/20"
+          className="flex lg:flex-col gap-x-4 items-center lg:gap-y-1 px-4 lg:px-1 py-2 lg:py-1.5 rounded-3xl text-black dark:text-white text-xl dark:bg-black/20 bg-indigo-500/20"
         >
           <li className={`rounded-full p-2 ${getIsActiveClass("home")}`}>
             <a
@@ -45,7 +46,7 @@ function Header() {
               onClick={() => handleItemClick("home")}
               aria-label="Visit the Home Section"
             >
-              <IoMdHome />
+              <IoMdHome size={16} />
             </a>
           </li>
           <li className={`rounded-full p-2 ${getIsActiveClass("about")}`}>
@@ -55,7 +56,7 @@ function Header() {
               onClick={() => handleItemClick("about")}
               aria-label="Visit the About Section"
             >
-              <IoMdPerson />
+              <IoMdPerson size={16} />
             </a>
           </li>
           <li className={`rounded-full p-2 ${getIsActiveClass("skills")}`}>
@@ -65,7 +66,7 @@ function Header() {
               onClick={() => handleItemClick("skills")}
               aria-label="Visit the Skills Section"
             >
-              <IoMdSchool />
+              <IoMdSchool size={16} />
             </a>
           </li>
           <li className={`rounded-full p-2 ${getIsActiveClass("portfolio")}`}>
@@ -75,7 +76,7 @@ function Header() {
               onClick={() => handleItemClick("portfolio")}
               aria-label="Visit the Portfolio Section"
             >
-              <IoMdDesktop />
+              <IoMdDesktop size={16} />
             </a>
           </li>
           <li
@@ -87,7 +88,7 @@ function Header() {
               onClick={() => handleItemClick("testimonials")}
               aria-label="Visit the Testimonials Section"
             >
-              <IoMdChatboxes />
+              <IoMdChatboxes size={16} />
             </a>
           </li>
           <li className={`rounded-full p-2 ${getIsActiveClass("contact")}`}>
@@ -97,7 +98,7 @@ function Header() {
               onClick={() => handleItemClick("contact")}
               aria-label="Visit the Contact Section"
             >
-              <IoMdCall />
+              <IoMdCall size={16} />
             </a>
           </li>
         </ul>
@@ -109,9 +110,41 @@ function Header() {
         {mode ? <FaMoon /> : <FaSun />}
       </div>
 
+      <div className="hidden lg:block fixed bottom-[15%] left-[3.7rem] text-sm">
+        <div className="flex flex-col justify-center items-center gap-y-4">
+          <a
+            href="https://github.com/amrutgawade"
+            target="_blank"
+            className="dark:text-indigo-50"
+          >
+            <FaGithub size={16} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/amrut-gawade/"
+            target="_blank"
+            className="dark:text-indigo-50"
+          >
+            <FaLinkedin size={16} />
+          </a>
+          <a
+            href="https://www.instagram.com/com.amrut.ig/"
+            target="_blank"
+            className="dark:text-indigo-50"
+          >
+            <FaInstagram size={16} />
+          </a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=%2B917741941681&text&type=phone_number&app_absent=0"
+            target="_blank"
+            className="dark:text-indigo-50"
+          >
+            <FaWhatsapp size={16} />
+          </a>
+        </div>
+      </div>
       <a
         href="#footer"
-        className="hidden md:block fixed bottom-[15%] right-8 rotate-90 text-sm text-indigo-600 hover:text-black dark:hover:text-white duration-700"
+        className="hidden lg:block fixed bottom-[15%] right-0 rotate-90 text-sm text-indigo-600 hover:text-black dark:hover:text-white duration-700"
         aria-label="Scroll to Bottom at Footer Section"
       >
         Scroll Down &nbsp; →
@@ -121,15 +154,15 @@ function Header() {
         <img
           src={Profile1}
           alt="Profile-1"
-          className="lg:mt-8 mt-8 h-w-64 w-64 rounded-full p-2 border-indigo-500/75 border-2"
+          className="lg:mt-4 mt-0 h-w-64 w-64 rounded-full p-2 border-indigo-500/75 border-2"
         />
-        <p className="lg:mt-8 mt-8 text-slate-500 text-base font-bold">
+        <p className="lg:mt-8 mt-10 text-slate-500 text-base font-semibold">
           Hello I'm
         </p>
         <p className="mt-4 dark:text-slate-50 text-4xl font-semibold">
           AMRUT GAWADE
         </p>
-        <p className="mt-2 text-slate-500 text-base font-bold">
+        <p className="mt-2 text-slate-500">
           Fullstack Developer | Software Developer
         </p>
         <div className="flex items-center justify-center gap-x-5 mt-10 tracking-normal">
