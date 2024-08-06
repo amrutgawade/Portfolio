@@ -22,7 +22,7 @@ function Header() {
   };
 
   const getIsActiveClass = (itemName) => {
-    return activeItem === itemName ? "bg-indigo-500/30 text-indigo-500" : "";
+    return activeItem === itemName ? "bg-indigo-500/30" : "";
   };
 
   useEffect(() => {
@@ -39,40 +39,40 @@ function Header() {
           id="navbar"
           className="flex lg:flex-col gap-x-4 items-center lg:gap-y-1 px-4 lg:px-1 py-2 lg:py-1.5 rounded-3xl text-black dark:text-white text-xl dark:bg-black/20 bg-indigo-500/20"
         >
-          <li className={`rounded-full p-2 ${getIsActiveClass("home")}`}>
+          <li className={`rounded-full p-2 hover:bg-indigo-500/30 ${getIsActiveClass("home")}`}>
             <a
               href="#home"
-              className="hover:text-indigo-500"
+              className="dark:text-indigo-500"
               onClick={() => handleItemClick("home")}
               aria-label="Visit the Home Section"
             >
               <IoMdHome size={16} />
             </a>
           </li>
-          <li className={`rounded-full p-2 ${getIsActiveClass("about")}`}>
+          <li className={`rounded-full p-2 hover:bg-indigo-500/30 ${getIsActiveClass("about")}`}>
             <a
               href="#about"
-              className="hover:text-indigo-500"
+              className="dark:text-indigo-500"
               onClick={() => handleItemClick("about")}
               aria-label="Visit the About Section"
             >
               <IoMdPerson size={16} />
             </a>
           </li>
-          <li className={`rounded-full p-2 ${getIsActiveClass("skills")}`}>
+          <li className={`rounded-full p-2 hover:bg-indigo-500/30 ${getIsActiveClass("skills")}`}>
             <a
               href="#skills"
-              className="hover:text-indigo-500"
+              className="dark:text-indigo-500"
               onClick={() => handleItemClick("skills")}
               aria-label="Visit the Skills Section"
             >
               <IoMdSchool size={16} />
             </a>
           </li>
-          <li className={`rounded-full p-2 ${getIsActiveClass("portfolio")}`}>
+          <li className={`rounded-full p-2 hover:bg-indigo-500/30 ${getIsActiveClass("portfolio")}`}>
             <a
               href="#portfolio"
-              className="hover:text-indigo-500"
+              className="dark:text-indigo-500"
               onClick={() => handleItemClick("portfolio")}
               aria-label="Visit the Portfolio Section"
             >
@@ -80,21 +80,21 @@ function Header() {
             </a>
           </li>
           <li
-            className={`rounded-full p-2 ${getIsActiveClass("testimonials")}`}
+            className={`rounded-full p-2 hover:bg-indigo-500/30 ${getIsActiveClass("testimonials")}`}
           >
             <a
               href="#testimonials"
-              className="hover:text-indigo-500"
+              className="dark:text-indigo-500"
               onClick={() => handleItemClick("testimonials")}
               aria-label="Visit the Testimonials Section"
             >
               <IoMdChatboxes size={16} />
             </a>
           </li>
-          <li className={`rounded-full p-2 ${getIsActiveClass("contact")}`}>
+          <li className={`rounded-full p-2 hover:bg-indigo-500/30 ${getIsActiveClass("contact")}`}>
             <a
               href="#contact"
-              className="hover:text-indigo-500"
+              className="dark:text-indigo-500"
               onClick={() => handleItemClick("contact")}
               aria-label="Visit the Contact Section"
             >
@@ -105,9 +105,9 @@ function Header() {
       </nav>
       <div
         onClick={() => setMode(!mode)}
-        className="absolute lg:fixed top-6 right-6 p-3 rounded-full text-black dark:text-white duration-700 dark:-rotate-[30deg] rotate-[30deg]"
+        className="absolute lg:fixed top-6 right-6 p-2 rounded-full bg-slate-900/10 dark:bg-white/10 border border-slate-300 dark:border-slate-700 text-black dark:text-white duration-700 dark:rotate-[30deg] -rotate-[30deg]"
       >
-        {mode ? <FaMoon /> : <FaSun />}
+        {mode ? <FaSun /> : <FaMoon />}
       </div>
 
       <div className="hidden lg:block fixed bottom-[15%] left-[3.7rem] text-sm">
