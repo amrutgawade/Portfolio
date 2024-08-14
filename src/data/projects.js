@@ -51,7 +51,7 @@ const projects = [
         title: "CeramicsHeaven",
         category: ["UIUX", "Springboot"],
         image: Project6,
-        live: "#",
+        live: "https://ceramicsheaven.onrender.com",
         github: "https://github.com/amrutgawade/ceramicsheaven-client"
     },
     {
