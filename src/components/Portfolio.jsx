@@ -3,7 +3,6 @@ import projects from "../data/projects";
 
 function Portfolio() {
   const [category, setCategory] = useState("All");
-  console.log(category);
   const categories = ["All", "UIUX", "MERN", "Springboot"];
   return (
     <section
