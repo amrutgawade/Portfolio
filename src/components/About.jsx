@@ -3,7 +3,7 @@ import Profile from "../assets/imgs/team-1.jpg";
 
 function About() {
   return (
-    <section id="about" className="min-h-screen py-16 text-center">
+    <section id="about" className="min-h-screen py-16 text-center relative">
       <p className="text-slate-500 text-sm mb-1 font-medium">Want to know</p>
       <p className="text-indigo-500 text-3xl">About Me</p>
       <div className="flex flex-col lg:flex-row justify-center px-8 mt-8 md:mx-24">

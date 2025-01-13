@@ -33,13 +33,17 @@ function Header() {
     }
   }, [mode]);
   return (
-    <header id="home" className="min-h-screen py-16 relative">
+    <header id="home" className="min-h-screen py-16 relative z-10">
       <nav className="fixed lg:top-16 bottom-[5%] lg:left-12 left-[50%] lg:translate-x-0 lg:translate-y-0 translate-x-[-50%] translate-y-[-50%]">
         <ul
           id="navbar"
           className="flex lg:flex-col gap-x-4 items-center lg:gap-y-1 px-4 lg:px-1 py-2 lg:py-1.5 rounded-3xl text-black dark:text-white text-xl dark:bg-black/20 bg-indigo-500/20"
         >
-          <li className={`rounded-full p-2 hover:bg-indigo-500/30 ${getIsActiveClass("home")}`}>
+          <li
+            className={`rounded-full p-2 hover:bg-indigo-500/30 ${getIsActiveClass(
+              "home"
+            )}`}
+          >
             <a
               href="#home"
               className="dark:text-indigo-500"
@@ -49,7 +53,11 @@ function Header() {
               <IoMdHome size={16} />
             </a>
           </li>
-          <li className={`rounded-full p-2 hover:bg-indigo-500/30 ${getIsActiveClass("about")}`}>
+          <li
+            className={`rounded-full p-2 hover:bg-indigo-500/30 ${getIsActiveClass(
+              "about"
+            )}`}
+          >
             <a
               href="#about"
               className="dark:text-indigo-500"
@@ -59,7 +67,11 @@ function Header() {
               <IoMdPerson size={16} />
             </a>
           </li>
-          <li className={`rounded-full p-2 hover:bg-indigo-500/30 ${getIsActiveClass("skills")}`}>
+          <li
+            className={`rounded-full p-2 hover:bg-indigo-500/30 ${getIsActiveClass(
+              "skills"
+            )}`}
+          >
             <a
               href="#skills"
               className="dark:text-indigo-500"
@@ -69,7 +81,11 @@ function Header() {
               <IoMdSchool size={16} />
             </a>
           </li>
-          <li className={`rounded-full p-2 hover:bg-indigo-500/30 ${getIsActiveClass("portfolio")}`}>
+          <li
+            className={`rounded-full p-2 hover:bg-indigo-500/30 ${getIsActiveClass(
+              "portfolio"
+            )}`}
+          >
             <a
               href="#portfolio"
               className="dark:text-indigo-500"
@@ -80,7 +96,9 @@ function Header() {
             </a>
           </li>
           <li
-            className={`rounded-full p-2 hover:bg-indigo-500/30 ${getIsActiveClass("testimonials")}`}
+            className={`rounded-full p-2 hover:bg-indigo-500/30 ${getIsActiveClass(
+              "testimonials"
+            )}`}
           >
             <a
               href="#testimonials"
@@ -91,7 +109,11 @@ function Header() {
               <IoMdChatboxes size={16} />
             </a>
           </li>
-          <li className={`rounded-full p-2 hover:bg-indigo-500/30 ${getIsActiveClass("contact")}`}>
+          <li
+            className={`rounded-full p-2 hover:bg-indigo-500/30 ${getIsActiveClass(
+              "contact"
+            )}`}
+          >
             <a
               href="#contact"
               className="dark:text-indigo-500"
@@ -163,7 +185,7 @@ function Header() {
           AMRUT GAWADE
         </p>
         <p className="mt-2 text-slate-500">
-          Fullstack Developer | Software Developer
+          Software Developer | Full-Stack Developer
         </p>
         <div className="flex items-center justify-center gap-x-5 mt-10 tracking-normal">
           <a

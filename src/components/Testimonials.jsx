@@ -5,7 +5,7 @@ function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="min-h-screen py-16 text-white text-center"
+      className="min-h-screen py-16 text-white text-center relative"
     >
       <p className="text-slate-500 text-sm mb-1 font-medium">
         Reiview from my clients

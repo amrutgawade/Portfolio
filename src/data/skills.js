@@ -1,4 +1,5 @@
 import {
+    SiDotnet,
     SiMongodb,
     SiMysql,
     SiPostman,
@@ -18,70 +19,84 @@ import {
     FaPhp,
     FaReact,
 } from "react-icons/fa6";
+import { TbBrandCSharp } from "react-icons/tb";
+import { FaGitlab } from "react-icons/fa";
 
 const skills = [
     {
-        id: 1,
+        name: "Java",
         skill: FaJava
     },
     {
-        id: 2,
+        name: "C Sharp",
+        skill: TbBrandCSharp
+    },
+    {
+        name: "ASP.Net",
+        skill: SiDotnet
+    },
+    {
+        name: "ReactJs",
         skill: FaReact
     },
     {
-        id: 3,
+        name: "HTML",
         skill: FaHtml5
     },
     {
-        id: 4,
+        name: "CSS",
         skill: FaCss3
     },
     {
-        id: 5,
+        name: "Javascript",
         skill: FaJs
     },
     {
-        id: 6,
+        name: "NodeJs",
         skill: FaNodeJs
     },
     {
-        id: 7,
+        name: "Springboot",
         skill: SiSpringboot
     },
     {
-        id: 8,
+        name: "MySQL",
         skill: SiMysql
     },
     {
-        id: 9,
+        name: "MongoDB",
         skill: SiMongodb
     },
     {
-        id: 10,
+        name: "Tailwind CSS",
         skill: SiTailwindcss
     },
     {
-        id: 11,
+        name: "Bootstrap",
         skill: FaBootstrap
     },
     {
-        id: 12,
+        name: "PHP",
         skill: FaPhp
     },
     {
-        id: 13,
+        name: "Postman",
         skill: SiPostman
     },
     {
-        id: 14,
+        name: "Git",
         skill: FaGitAlt
     },
     {
-        id: 15,
+        name: "GitHub",
         skill: FaGithub
     },
     {
-        id: 16,
+        name: "GitLab",
+        skill: FaGitlab
+    },
+    {
+        name: "Figma",
         skill: FaFigma
     },
 ]
